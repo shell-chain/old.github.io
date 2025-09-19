@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+}
+
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Выравнивание элементов по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li img {
+    border-radius: 50%;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#new-button {
+    display: inline-block;
+    background-color: #3c4e45;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#new-button:hover {
+    background-color: #2b3631; /* новый цвет фона при наведении */
+}
+
+#new-button:active {
+    background-color: #1c221f; /* цвет фона при нажатии */
+}
+
+.button-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('images/Ava_d.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hero {
+    text-align: center;
+    padding: 180px 20px;
+    background: url('images/background.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Важно добавить это */
+}
+
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero span {
+    color: #00e676;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #00e676;
+    border: none;
+    padding: 15px 30px;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.buttons button:hover {
+    background-color: #00c853;
+}
+
+.buttons button:active {
+    background-color: #00913c;
+}
+
+footer {
+    background-color: #353535;
+    padding: 8px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto; /* Центрирование содержимого по горизонтали */
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение по ширине */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+.footer-content p {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Примерный отступ сверху для размещения фото */
+}
+
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-content {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.footer-content {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+.footer-text {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.main-content {
+    min-height: 135vh; /* Минимальная высота равная высоте окна браузера */
+}
+
+.centered-text {
+    min-height: 15vh; /* Минимальная высота для центрирования по вертикали */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centered-text h2 {
+    font-size: 46px;
+    color: #c06666;
+    margin-bottom: 20px;
+}
+
+.centered-text .small-text {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.centered-text2 {
+    min-height: 30vh; /* Минимальная высота для центрирования по вертикали */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centered-text2 h2 {
+    font-size: 46px;
+    color: #96cc94;
+    margin-bottom: 20px;
+}
+
+.centered-text2 .small-text2 {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+nav ul li a[href="main.html"] {
+    color: #00e676; /* Красный цвет текста */
+}
